@@ -40,7 +40,7 @@ public class Quiz {
 				} catch (Exception e) {
 					System.out.println("Morate unjeti samo cijele brojeve");
 				} 
-					
+			break;		
 		case 2:
 				try {
 					while(korisnikovUnos!=0) {
@@ -65,7 +65,30 @@ public class Quiz {
 					System.out.println("Morate unjeti samo cijele brojeve");
 				}
 			
-		}
+		
+		break;
+		
+		case 3:
+			try {
+				while(korisnikovUnos!=0) {
+					int a = (int) (Math.random()*10);
+					int b = (int) (Math.random()*10);
+					
+					System.out.println("Proizvod brojeva " + a + " + " + b + " je: ");
+					int proizod = unos.nextInt();
+					
+					if(proizod == a * b) {
+						System.out.println("Proizvod je: " + proizod);
+						
+					}else {
+						System.out.println("Pogresan rezultat");
+					}
+				}
+				
+			} catch (Exception e) {
+				System.out.println("Morate unjeti samo cijele brojeve");
+			}
+			break;
 		
 	}
 }
