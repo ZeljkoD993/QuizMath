@@ -116,6 +116,30 @@ public class Quiz {
 			}
 			break;
 			
+		case 5:
+			
+			
+			try {
+				while(korisnikovUnos!=0) {
+				int a = (int) (Math.random()*10);
+				
+				
+				System.out.println("Korijen broja: " + a  + " je: ");
+				
+				int korijen = unos.nextInt();
+				if(korijen == a * a) {
+					System.out.println("Rezultat je: " + korijen);
+				} 
+				else {
+					System.out.println("Pogresan rezultat");
+					 }
+				}
+				
+			} catch (Exception e) {
+				System.out.println("Morate unjeti samo cijele brojeve");
+			} 
+		break;		
+			
 		case 6:
 		 break;
 		
