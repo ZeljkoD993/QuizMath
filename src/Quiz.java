@@ -74,7 +74,7 @@ public class Quiz {
 					int a = (int) (Math.random()*10);
 					int b = (int) (Math.random()*10);
 					
-					System.out.println("Proizvod brojeva " + a + " + " + b + " je: ");
+					System.out.println("Proizvod brojeva " + a + " * " + b + " je: ");
 					int proizod = unos.nextInt();
 					
 					if(proizod == a * b) {
@@ -89,6 +89,36 @@ public class Quiz {
 				System.out.println("Morate unjeti samo cijele brojeve");
 			}
 			break;
+			
+		case 4:
+			try {
+				while(korisnikovUnos!=0) {
+					int a = (int) (Math.random()*10);
+					int b = (int) (Math.random()*10);
+					
+					System.out.println("Kolicnik brojeva " + a + " / " + b + " je: ");
+					int kolicnik = unos.nextInt();
+					if(a>b){
+						if(kolicnik == a / b) {
+							System.out.println("Proizvod je: " + kolicnik);
+							
+						}else {
+							System.out.println("Pogresan rezultat");
+						}
+					} else {
+					
+					}
+					
+				}
+				
+			} catch (Exception e) {
+				System.out.println("Morate unjeti samo cijele brojeve");
+			}
+			break;
 		
-	}
+		}
+		
+		}
+		
+
 }
