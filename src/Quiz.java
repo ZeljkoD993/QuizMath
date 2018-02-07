@@ -114,6 +114,7 @@ public class Quiz {
 			} catch (Exception e) {
 				System.out.println("Morate unjeti samo cijele brojeve");
 			}
+			
 			break;
 		
 		}
