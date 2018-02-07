@@ -115,6 +115,9 @@ public class Quiz {
 				System.out.println("Morate unjeti samo cijele brojeve");
 			}
 			break;
+			
+		case 6:
+		 break;
 		
 		}
 		
